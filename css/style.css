@@ -6,20 +6,28 @@
 }
 
 body {
+  background-color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.mainpage {
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../assets/mainbackground.png);
-  background-position: center 60%;
-  background-size: cover;
 }
 
 .linkReset {
   color: black;
   text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.break20 {
+  height: 20px;
 }
 
 .menu {
@@ -61,6 +69,14 @@ body {
   color: white;
 }
 
+.mainpage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/mainbackground.png);
+  background-position: center 60%;
+  background-size: cover;
+}
+
 .about {
   position: absolute;
   top: 50%;
@@ -81,5 +97,40 @@ body {
   font-size: 48px;
   font-weight: 100;
   text-shadow: 0 0 5px #000;
+}
+
+.aboutme {
+  padding: 40px 20px;
+}
+
+.aboutme__image--floatleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.aboutme__image--floatright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.aboutme__text {
+  font-size: 24px;
+}
+
+.aboutme__text--quote {
+  font-weight: 800;
+  padding: 20px 40px 20px 80px;
+  font-size: 32px;
+}
+
+.footer {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.footer__text {
+  color: white;
+  font-size: 12px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

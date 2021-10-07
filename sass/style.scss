@@ -1,3 +1,4 @@
+// reset initial style values
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +6,8 @@
 }
 
 body {
+  background-color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.mainpage {
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../assets/mainbackground.png);
-  background-position: center 60%;
-  background-size: cover;
 }
 
 .linkReset {
@@ -21,6 +15,22 @@ body {
   text-decoration: none;
 }
 
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.break20 {
+  height: 20px;
+}
+
+// top menu styles
 .menu {
   display: flex;
   padding: 30px 0;
@@ -57,6 +67,16 @@ body {
   }
 }
 
+
+// start page style
+.mainpage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/mainbackground.png);
+  background-position: center 60%;
+  background-size: cover;
+}
+
 .about {
   position: absolute;
   top: 50%;
@@ -76,5 +96,48 @@ body {
     font-size: 48px;
     font-weight: 100;
     text-shadow: 0 0 5px #000;
+  }
+}
+
+
+// aboutme page styles
+.aboutme {
+  padding: 40px 20px;
+
+  &__image {
+
+    &--floatleft {
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+
+    &--floatright {
+      float: right;
+      margin: 0 0 20px 20px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+
+    &--quote {
+      font-weight: 800;
+      padding: 20px 40px 20px 80px;
+      font-size: 32px;
+
+    }
+  }
+}
+
+
+// footer styles
+.footer {
+  background-color: #000;
+  padding: 10px 0;
+
+  &__text {
+    color: white;
+    font-size: 12px;
+    text-align: center;
   }
 }
