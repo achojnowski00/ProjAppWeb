@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/mainbackground.png);
+  background-position: center 60%;
+  background-size: cover;
+}
+
+.linkReset {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  padding: 30px 0;
+  background-color: rgba($color: #000000, $alpha: .2);
+
+  &__wrap {
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    padding: 10px 30px;
+    color: white;
+    font-weight: 800;
+    font-size: 32px;
+    transition: color .15s;
+
+    &:hover {
+      color: rgb(77, 189, 176)
+    }
+
+    &--contact {
+      margin-left: 30px;
+      border: 2px solid;
+      border-radius: 15px;
+      transition: background-color .15s;
+
+      &:hover {
+        background-color: rgb(77, 189, 176);
+        color: white;
+      }
+    }
+
+  }
+}
+
+.about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: white;
+
+  &__name {
+    font-size: 88px;
+    font-weight: 700;
+    text-shadow: 0 0 10px #000;
+  }
+
+  &__myHobby {
+    font-size: 48px;
+    font-weight: 100;
+    text-shadow: 0 0 5px #000;
+  }
+}

@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/mainbackground.png);
+  background-position: center 60%;
+  background-size: cover;
+}
+
+.linkReset {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu__wrap {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+.menu__item {
+  padding: 10px 30px;
+  color: white;
+  font-weight: 800;
+  font-size: 32px;
+  -webkit-transition: color .15s;
+  transition: color .15s;
+}
+
+.menu__item:hover {
+  color: #4dbdb0;
+}
+
+.menu__item--contact {
+  margin-left: 30px;
+  border: 2px solid;
+  border-radius: 15px;
+  -webkit-transition: background-color .15s;
+  transition: background-color .15s;
+}
+
+.menu__item--contact:hover {
+  background-color: #4dbdb0;
+  color: white;
+}
+
+.about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.about__name {
+  font-size: 88px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #000;
+}
+
+.about__myHobby {
+  font-size: 48px;
+  font-weight: 100;
+  text-shadow: 0 0 5px #000;
+}
+/*# sourceMappingURL=style.css.map */
