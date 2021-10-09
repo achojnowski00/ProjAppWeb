@@ -213,6 +213,42 @@ body {
   }
 }
 
+.gear {
+  &__product {
+    display: flex;
+    height: 300px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &ImgContainer {
+      flex-basis: 40%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    &Img {
+      height: 100%;
+    }
+
+    &Desc {
+      flex-basis: 60%;
+      padding: 30px;
+
+      &Title {
+        font-size: 32px;
+      }
+
+      &Text {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
 
 // footer styles
 .footer {
