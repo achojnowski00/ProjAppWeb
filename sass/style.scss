@@ -18,6 +18,8 @@ body {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  background-color: #ccc;
+  box-shadow: 0 5px 20px #666;
 }
 
 .clearfix::after {
@@ -147,7 +149,7 @@ body {
   }
 
   &__usluga {
-    margin-bottom: 10px;
+    margin-top: 68px;
 
     &Subtitle {
       margin-top: 20px;
@@ -163,6 +165,11 @@ body {
     &Image {
       margin: 0 20px;
       float: left;
+    }
+
+    &Text {
+      line-height: 1.75;
+      font-size: 20px;
     }
 
     &List {
@@ -182,6 +189,10 @@ body {
 .footer {
   background-color: #000;
   padding: 10px 0;
+
+  .wrapper {
+    background-color: transparent;
+  }
 
   &__text {
     color: white;
