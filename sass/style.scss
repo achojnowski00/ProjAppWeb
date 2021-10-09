@@ -249,6 +249,24 @@ body {
   }
 }
 
+.contact {
+  min-height: 75vh;
+  position: relative;
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__data {
+    font-size: 32px;
+    padding: 20px;
+    font-weight: 800;
+  }
+}
+
 
 // footer styles
 .footer {
