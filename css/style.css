@@ -274,6 +274,10 @@ body {
   padding: 10px 0;
 }
 
+.footer .clock {
+  color: white;
+}
+
 .footer .wrapper {
   background-color: transparent;
   -webkit-box-shadow: none;
