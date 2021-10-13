@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>alexprzezx</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/timedate.js"></script>
 </head>
 
-<body>
+<body onload="startclock()">
   <section class="menu">
     <div class="menu__wrap">
       <a href="index.html" class="menu__item linkReset">Strona główna</a>
@@ -64,6 +65,10 @@
   </div>
 
   <div class="footer">
+    <div class="clock">
+      <div id="zegarek"></div>
+      <div id="data"></div>
+    </div>
     <div class="wrapper">
       <p class="footer__text">
         All rights reserved &copy;
