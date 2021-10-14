@@ -255,6 +255,57 @@ body {
   position: relative;
 }
 
+.contact__buttons {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact__btn {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  -webkit-transition: background-color .15s, color .15s;
+  transition: background-color .15s, color .15s;
+}
+
+.contact__btn--yellow:hover {
+  background-color: #fff000;
+}
+
+.contact__btn--black:hover {
+  background-color: #000;
+  color: white;
+}
+
+.contact__btn--white:hover {
+  background-color: #fff;
+}
+
+.contact__btn--green:hover {
+  background-color: #0f0;
+}
+
+.contact__btn--blue:hover {
+  background-color: #00f;
+  color: white;
+}
+
+.contact__btn--orange:hover {
+  background-color: #ff8000;
+}
+
+.contact__btn--gray:hover {
+  background-color: #c0c0c0;
+}
+
+.contact__btn--red:hover {
+  background-color: #f00;
+  color: white;
+}
+
 .contact__info {
   position: absolute;
   top: 50%;
@@ -276,6 +327,8 @@ body {
 
 .footer .clock {
   color: white;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 .footer .wrapper {

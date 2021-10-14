@@ -253,6 +253,58 @@ body {
   min-height: 75vh;
   position: relative;
 
+  &__buttons {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    transition: background-color .15s, color .15s;
+
+    &--yellow:hover {
+      background-color: #fff000;
+    }
+
+    &--black:hover {
+      background-color: #000;
+      color: white;
+    }
+
+    &--white:hover {
+      background-color: #fff;
+    }
+
+    &--green:hover {
+      background-color: #0f0;
+    }
+
+    &--blue:hover {
+      background-color: #00f;
+      color: white;
+    }
+
+    &--orange:hover {
+      background-color: #ff8000;
+    }
+
+    &--gray:hover {
+      background-color: #c0c0c0;
+    }
+
+    &--red:hover {
+      background-color: #f00;
+      color: white;
+    }
+
+
+  }
+
   &__info {
     position: absolute;
     top: 50%;
@@ -274,7 +326,9 @@ body {
   padding: 10px 0;
 
   .clock {
-    color: white
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
   }
 
   .wrapper {

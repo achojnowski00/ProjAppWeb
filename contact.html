@@ -24,15 +24,21 @@
 
   <div class="contact wrapper">
 
-    <FORM METHOD="POST" NAME="background">
-      <INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
-      <INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
-      <INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
-      <INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')">
-      <INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
-      <INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')">
-      <INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
-      <INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+    <FORM class='contact__buttons' METHOD="POST" NAME="background">
+      <INPUT class='contact__btn contact__btn--yellow' TYPE="button" VALUE="żółty"
+        ONCLICK="changeBackground('#FFF000')">
+      <INPUT class='contact__btn contact__btn--black' TYPE="button" VALUE="czarny"
+        ONCLICK="changeBackground('#000000')">
+      <INPUT class='contact__btn contact__btn--white' TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
+      <INPUT class='contact__btn contact__btn--green' TYPE="button" VALUE="zielony"
+        ONCLICK="changeBackground('#00FF00')">
+      <INPUT class='contact__btn contact__btn--blue' TYPE="button" VALUE="niebieski"
+        ONCLICK="changeBackground('#0000FF')">
+      <INPUT class='contact__btn contact__btn--orange' TYPE="button" VALUE="pomarańczowy"
+        ONCLICK="changeBackground('#FF8000')">
+      <INPUT class='contact__btn contact__btn--gray' TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+      <INPUT class='contact__btn contact__btn--red' TYPE="button" VALUE="czerwony"
+        ONCLICK="changeBackground('#FF0000')">
     </FORM>
 
     <div class="contact__info">
