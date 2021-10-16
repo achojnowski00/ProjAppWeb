@@ -33,6 +33,58 @@ body {
   height: 20px;
 }
 
+.hamIcon {
+  position: fixed;
+  z-index: 5;
+  top: 15px;
+  right: 20px;
+  color: white;
+  font-size: 50px;
+}
+
+.hamIcon .open-icon,
+.hamIcon .close-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamIcon .open-icon.active,
+.hamIcon .close-icon.active {
+  display: block;
+}
+
+.hamMenu {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  -webkit-transition: .15s;
+  transition: .15s;
+}
+
+.hamMenu.active {
+  right: 0;
+}
+
+.hamMenuList {
+  list-style: none;
+}
+
+.hamMenuList a {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hamMenuList a:hover {
+  text-decoration: underline;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
