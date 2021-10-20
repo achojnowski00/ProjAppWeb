@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab3 animacje</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/lab3.css">
 </head>
 
@@ -13,10 +15,45 @@
   <h1 class="heading">animacje na blokach</h1>
 
   <div class="blocksContainer">
-    <div class="block"></div>
-    <div class="block"></div>
-    <div class="block"></div>
+    <div class="block" id="animacjaTestowa1">Kliknij, a zrobię się większy</div>
+    <div class="block" id="animacjaTestowa2">Najedz na mnie, powiększę się</div>
+    <div class="block" id="animacjaTestowa3">Kliknij, a urosnę</div>
   </div>
+
+  <script>
+    $("#animacjaTestowa1").on("click", function () {
+      $(this).animate({
+        width: "500px",
+        opacity: 0.4,
+        fontSize: "3em",
+        borderWidth: "10px"
+      }, 1500);
+    });
+
+    $("#animacjaTestowa2").on({
+      "mouseover": function () {
+        $(this).animate({
+          width: 300
+        }, 800);
+      },
+      "mouseout": function () {
+        $(this).animate({
+          width: 200
+        }, 800);
+      }
+    });
+
+    $("#animacjaTestowa3").on("click", function () {
+      if (!$(this).is(":animated")) {
+        $(this).animate({
+          width: "+=" + 50,
+          height: "+=" + 10,
+          opacity: "-=" + 0.1,
+          duration: 3000
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
