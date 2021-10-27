@@ -43,18 +43,15 @@ for ($i = 1; $i <= 10; $i++) {
 echo "<br>";
 
 
-echo "<br/>1. Metoda GET  do poprawnego dzialania w linku nalezy umiescic /?name=TwojeImie<br/><br/>";
-
+echo "<br/>Metoda GET do poprawnego dzialania potrzebuje aby w linku umiescic .../?name=Alex<br/>";
 echo 'Witaj ' . htmlspecialchars($_GET["name"]) . '!';
 
 
 session_start();
-$_SESSION["newsession"]='123456789';
+$_SESSION["newsession"]='fsdsfd';
 echo '</br>';
 echo $_SESSION["newsession"];
 echo '</br>';
-
-echo "<br/>3. Metoda POST  do poprawnego dzialania w uzytkownik musi metoda post wyslać zmienną name<br/>";
 
 echo 'Witaj ' . htmlspecialchars($_POST["name"]) . '!';
 
