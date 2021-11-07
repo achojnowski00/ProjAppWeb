@@ -10,7 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 
   &.main {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -61,6 +61,7 @@ body {
 .hamMenu {
   position: absolute;
   top: 0;
+  z-index: 1;
   right: -300px;
   width: 300px;
   height: 100vh;
@@ -133,6 +134,10 @@ body {
   background-image: url(../img/mainbackground.png);
   background-position: center 60%;
   background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .about {

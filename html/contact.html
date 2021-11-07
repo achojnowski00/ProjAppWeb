@@ -1,55 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="contact wrapper">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>alexprzezx</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/kolorujtlo.js"></script>
-</head>
+  <FORM class='contact__buttons' METHOD="POST" NAME="background">
+    <INPUT class='contact__btn contact__btn--yellow' TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
+    <INPUT class='contact__btn contact__btn--black' TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
+    <INPUT class='contact__btn contact__btn--white' TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
+    <INPUT class='contact__btn contact__btn--green' TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')">
+    <INPUT class='contact__btn contact__btn--blue' TYPE="button" VALUE="niebieski"
+      ONCLICK="changeBackground('#0000FF')">
+    <INPUT class='contact__btn contact__btn--orange' TYPE="button" VALUE="pomarańczowy"
+      ONCLICK="changeBackground('#FF8000')">
+    <INPUT class='contact__btn contact__btn--gray' TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+    <INPUT class='contact__btn contact__btn--red' TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+  </FORM>
 
-<body>
-  <section class="menu">
-    <div class="menu__wrap">
-      <a href="../index.html" class="menu__item linkReset">Strona główna</a>
-      <a href="../html/aboutme.html" class="menu__item linkReset">O mnie</a>
-      <a href="../html/portfolio.html" class="menu__item linkReset">Portfolio</a>
-      <a href="../html/uslugi.html" class="menu__item linkReset">Uslugi</a>
-      <a href="../html/gear.html" class="menu__item linkReset">Sprzęt</a>
-      <a href="../html/contact.html" class="menu__item menu__item--contact linkReset">Kontakt</a>
-    </div>
-  </section>
+  <div class="contact__info">
+    <p class="contact__data">Email: <a href="mailto:achojnowski00@gmail.com">achojnowski00@gmail.com</a></p>
 
-  <div class="contact wrapper">
-
-    <FORM class='contact__buttons' METHOD="POST" NAME="background">
-      <INPUT class='contact__btn contact__btn--yellow' TYPE="button" VALUE="żółty"
-        ONCLICK="changeBackground('#FFF000')">
-      <INPUT class='contact__btn contact__btn--black' TYPE="button" VALUE="czarny"
-        ONCLICK="changeBackground('#000000')">
-      <INPUT class='contact__btn contact__btn--white' TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
-      <INPUT class='contact__btn contact__btn--green' TYPE="button" VALUE="zielony"
-        ONCLICK="changeBackground('#00FF00')">
-      <INPUT class='contact__btn contact__btn--blue' TYPE="button" VALUE="niebieski"
-        ONCLICK="changeBackground('#0000FF')">
-      <INPUT class='contact__btn contact__btn--orange' TYPE="button" VALUE="pomarańczowy"
-        ONCLICK="changeBackground('#FF8000')">
-      <INPUT class='contact__btn contact__btn--gray' TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
-      <INPUT class='contact__btn contact__btn--red' TYPE="button" VALUE="czerwony"
-        ONCLICK="changeBackground('#FF0000')">
-    </FORM>
-
-    <div class="contact__info">
-      <p class="contact__data">Email: <a href="mailto:achojnowski00@gmail.com">achojnowski00@gmail.com</a></p>
-
-      <p class="contact__data">
-        Tel.: 346793479
-      </p>
-    </div>
+    <p class="contact__data">
+      Tel.: 346793479
+    </p>
   </div>
-
-</body>
-
-</html>
+</div>
