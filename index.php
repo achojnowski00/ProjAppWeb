@@ -45,25 +45,37 @@
       <a href="index.php?idp=kontakt" class="menu__item menu__item--contact linkReset">Kontakt</a>
     </div>
   </section>
-
+  
   <?php
     error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+    include 'cfg.php';
+    include 'showpage.php';
 
-    if($_GET['idp'] == '') $strona = './html/main.html';
-    if($_GET['idp'] == 'o-mnie') $strona = './html/aboutme.html';
-    if($_GET['idp'] == 'portfolio') $strona = './html/portfolio.html';
-    if($_GET['idp'] == 'uslugi') $strona = './html/uslugi.html';
-    if($_GET['idp'] == 'sprzet') $strona = './html/gear.html';
-    if($_GET['idp'] == 'kontakt') $strona = './html/contact.html';
-    if($_GET['idp'] == 'lab3') $strona = './html/lab3.html';
-  ?> 
+    if($_GET['idp'] == '') $strona = PokazPodstrone($link, 7);
+    if($_GET['idp'] == 'o-mnie') $strona = PokazPodstrone($link, 1);
+    if($_GET['idp'] == 'portfolio') $strona = PokazPodstrone($link, 2);
+    if($_GET['idp'] == 'uslugi') $strona = PokazPodstrone($link, 3);
+    if($_GET['idp'] == 'sprzet') $strona = PokazPodstrone($link, 4);
+    if($_GET['idp'] == 'kontakt') $strona = PokazPodstrone($link, 5);
+    if($_GET['idp'] == 'lab3') $strona = PokazPodstrone($link, 6);
 
-  <?php 
-    if(file_exists($strona)){
-      include($strona);
+    // // WERSJA PHP
+    // if($_GET['idp'] == '') $strona = './html/main.html';
+    // if($_GET['idp'] == 'o-mnie') $strona = './html/aboutme.html';
+    // if($_GET['idp'] == 'portfolio') $strona = './html/portfolio.html';
+    // if($_GET['idp'] == 'uslugi') $strona = './html/uslugi.html';
+    // if($_GET['idp'] == 'sprzet') $strona = './html/gear.html';
+    // if($_GET['idp'] == 'kontakt') $strona = './html/contact.html';
+    // if($_GET['idp'] == 'lab3') $strona = './html/lab3.html';
+
+
+    
+    if($strona){
+      echo($strona);
     } else{
       echo "The file $filename does not exist";
     }
+
   ?>
 
   <script src="js/timedate.js"></script>
