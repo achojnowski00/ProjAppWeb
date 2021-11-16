@@ -51,13 +51,17 @@
     include 'cfg.php';
     include 'showpage.php';
 
-    if($_GET['idp'] == '') $strona = PokazPodstrone($link, 7);
-    if($_GET['idp'] == 'o-mnie') $strona = PokazPodstrone($link, 1);
-    if($_GET['idp'] == 'portfolio') $strona = PokazPodstrone($link, 2);
-    if($_GET['idp'] == 'uslugi') $strona = PokazPodstrone($link, 3);
-    if($_GET['idp'] == 'sprzet') $strona = PokazPodstrone($link, 4);
-    if($_GET['idp'] == 'kontakt') $strona = PokazPodstrone($link, 5);
-    if($_GET['idp'] == 'lab3') $strona = PokazPodstrone($link, 6);
+    $config = new Config('localhost','root','','moja_strona');
+    $DBconnect = $config->connect();
+    $controller = new ShowPage($DBconnect);
+
+    if($_GET['idp'] == '') $strona = $controller->PokazPodstrone(7);
+    if($_GET['idp'] == 'o-mnie') $strona = $controller->PokazPodstrone(1);
+    if($_GET['idp'] == 'portfolio') $strona = $controller->PokazPodstrone(2);
+    if($_GET['idp'] == 'uslugi') $strona = $controller->PokazPodstrone(3);
+    if($_GET['idp'] == 'sprzet') $strona = $controller->PokazPodstrone(4);
+    if($_GET['idp'] == 'kontakt') $strona = $controller->PokazPodstrone(5);
+    if($_GET['idp'] == 'lab3') $strona = $controller->PokazPodstrone(6);
 
     // // WERSJA PHP
     // if($_GET['idp'] == '') $strona = './html/main.html';
