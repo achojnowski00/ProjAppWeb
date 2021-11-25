@@ -32,6 +32,10 @@
         <a href="index.php?idp=lab3">Lab 3</a>
       </li>
 
+      <li class="hamMenuListItem">
+        <a href="cmspanel.php">PANEL CMS</a>
+      </li>
+
     </ul>
   </div>
 
@@ -50,10 +54,12 @@
     error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
     include 'cfg.php';
     include 'showpage.php';
+    include 'admin/admin.php';
 
     $config = new Config('localhost','root','','moja_strona');
     $DBconnect = $config->connect();
     $controller = new ShowPage($DBconnect);
+    $root = new Admin($db);
 
     if($_GET['idp'] == '') $strona = $controller->PokazPodstrone(7);
     if($_GET['idp'] == 'o-mnie') $strona = $controller->PokazPodstrone(1);

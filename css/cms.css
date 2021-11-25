@@ -1,0 +1,138 @@
+body {
+  padding-top: 150px;
+}
+
+body * {
+  display: block;
+}
+
+body .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.addPage {
+  margin-left: 150px;
+}
+
+.addPage * {
+  margin: 0 auto;
+}
+
+.addPage .heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.addPage .inputbox {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.addPage .inputarea {
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.addPage .submitbutton {
+  background: yellowgreen;
+  font-weight: 900;
+  color: white;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.addPage .submitbutton:hover {
+  background: #80af22;
+}
+
+.listDelete {
+  margin-right: 150px;
+  text-align: center;
+}
+
+.listDelete .heading {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.listDelete .headingBottom {
+  margin-top: 50px;
+}
+
+.listDelete .pageid {
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.listDelete .submitbutton {
+  margin: 0 auto;
+  background: #b61a1a;
+  font-weight: 900;
+  color: white;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.listDelete .submitbutton:hover {
+  background: #951111;
+}
+
+.edit .heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.edit .inputbox {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.edit .inputarea {
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.edit .submitbutton {
+  background: #cda432;
+  font-weight: 900;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.edit .submitbutton:hover {
+  background: #bb9222;
+}
+
+.edit .form {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+/*# sourceMappingURL=cms.css.map */

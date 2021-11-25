@@ -1,0 +1,47 @@
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.login .heading {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.login .label {
+  font-size: 24px;
+}
+
+.login .inputbox {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.login .inputbox.password {
+  margin-bottom: 50px;
+}
+
+.login .submitbutton {
+  background: yellowgreen;
+  font-weight: 900;
+  color: white;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.login .submitbutton:hover {
+  background: #80af22;
+}
+/*# sourceMappingURL=login.css.map */

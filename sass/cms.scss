@@ -1,0 +1,139 @@
+body {
+  padding-top: 150px;
+
+  * {
+    display: block;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.addPage {
+
+  * {
+    margin: 0 auto;
+  }
+
+  margin-left: 150px;
+
+  .heading {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
+
+  .inputbox {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .inputarea {
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .submitbutton {
+    background: yellowgreen;
+    font-weight: 900;
+    color: white;
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 50px;
+
+    &:hover {
+      background: rgb(128, 175, 34);
+    }
+  }
+}
+
+
+.listDelete {
+  margin-right: 150px;
+  text-align: center;
+
+  .heading {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
+
+    &Bottom {
+      margin-top: 50px;
+    }
+  }
+
+  .pageid {
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .submitbutton {
+    margin: 0 auto;
+    background: rgb(182, 26, 26);
+    font-weight: 900;
+    color: white;
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 50px;
+
+    &:hover {
+      background: rgb(149, 17, 17);
+    }
+  }
+}
+
+.edit {
+  .heading {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
+
+  .inputbox {
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .inputarea {
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .submitbutton {
+    background: rgb(205, 164, 50);
+    font-weight: 900;
+    // color: white;
+    font-size: 16px;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+
+    &:hover {
+      background: rgb(187, 146, 34);
+    }
+
+  }
+
+  .form {
+    flex-basis: 20%;
+  }
+}
