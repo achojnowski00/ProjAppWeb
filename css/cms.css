@@ -135,4 +135,55 @@ body .wrap {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
 }
+
+.mails {
+  max-width: 1024px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.mails .heading {
+  font-weight: 800;
+  text-align: center;
+}
+
+.mails .singleMail {
+  padding: 5px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  font-size: 16px;
+}
+
+.mails .singleMail:nth-last-of-type(2n-1) {
+  background-color: #ccc;
+}
+
+.mails .headingMails {
+  font-weight: 800;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.mails .mailid {
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #222;
+}
+
+.mails .submitbutton {
+  background: #b61a1a;
+  font-weight: 900;
+  color: white;
+  font-size: 16px;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px auto 50px auto;
+}
+
+.mails .submitbutton:hover {
+  background: #951111;
+}
 /*# sourceMappingURL=cms.css.map */

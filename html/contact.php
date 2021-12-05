@@ -1,5 +1,4 @@
 <div class="contact wrapper">
-
   <FORM class='contact__buttons' METHOD="POST" NAME="background">
     <INPUT class='contact__btn contact__btn--yellow' TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
     <INPUT class='contact__btn contact__btn--black' TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
@@ -20,4 +19,11 @@
       Tel.: 346793479
     </p>
   </div>
+
+  <form class='sendMail' action="" method="post">
+    <h1 class="sendMail__heading">SKONTAKTUJ SIĘ ZE MNĄ</h1>
+    <input class="sender inputbox" name="sender" type="text" placeholder="Twój adres email" required>
+    <textarea class="content inputbox inputarea" name="content" placeholder="Treść maila" rows="10" required></textarea>
+    <button class="submitbutton" name="sendMail" type="submit" href="/">WYSLIJ</button>
+  </form>
 </div>

@@ -316,6 +316,50 @@ body.main {
   position: relative;
 }
 
+.contact .sendMail {
+  margin-top: 250px;
+  padding-bottom: 50px;
+}
+
+.contact .sendMail * {
+  margin: 0 auto;
+  display: block;
+}
+
+.contact .sendMail__heading {
+  text-align: center;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.contact .sendMail .inputbox {
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+.contact .sendMail .inputarea {
+  resize: none;
+}
+
+.contact .sendMail .submitbutton {
+  background: yellowgreen;
+  font-weight: 900;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #222;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.contact .sendMail .submitbutton:hover {
+  background: #80af22;
+}
+
 .contact__buttons {
   text-align: center;
   padding-top: 20px;
@@ -369,7 +413,7 @@ body.main {
 
 .contact__info {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -377,7 +421,7 @@ body.main {
 
 .contact__data {
   font-size: 32px;
-  padding: 20px;
+  padding: 10px;
   font-weight: 800;
 }
 

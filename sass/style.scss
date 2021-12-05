@@ -310,7 +310,52 @@ body {
   }
 }
 
+
 .contact {
+  .sendMail {
+    margin-top: 250px;
+    padding-bottom: 50px;
+
+    * {
+      margin: 0 auto;
+      display: block;
+    }
+
+    &__heading {
+      text-align: center;
+      font-weight: 800;
+      font-size: 26px;
+    }
+
+    .inputbox {
+      width: 500px;
+      padding: 20px;
+      font-size: 16px;
+      margin-bottom: 5px;
+      border: 1px solid #222;
+      border-radius: 10px;
+    }
+
+    .inputarea {
+      resize: none;
+    }
+
+    .submitbutton {
+      background: yellowgreen;
+      font-weight: 900;
+      color: white;
+      font-size: 16px;
+      border: 1px solid #222;
+      padding: 10px 30px;
+      border-radius: 50px;
+      margin-top: 20px;
+
+      &:hover {
+        background: rgb(128, 175, 34);
+      }
+    }
+  }
+
   min-height: 75vh;
   position: relative;
 
@@ -368,14 +413,14 @@ body {
 
   &__info {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
   &__data {
     font-size: 32px;
-    padding: 20px;
+    padding: 10px;
     font-weight: 800;
   }
 }

@@ -55,11 +55,16 @@
     include 'cfg.php';
     include 'showpage.php';
     include 'admin/admin.php';
+    include 'admin/mail.php';
 
     $config = new Config('localhost','root','','moja_strona');
     $DBconnect = $config->connect();
     $controller = new ShowPage($DBconnect);
     $root = new Admin($db);
+    $mail = new Mail($DBconnect);
+    $mail->DodajMail();
+    
+  
 
     if($_GET['idp'] == '') $strona = $controller->PokazPodstrone(7);
     if($_GET['idp'] == 'o-mnie') $strona = $controller->PokazPodstrone(1);

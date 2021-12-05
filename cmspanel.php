@@ -14,14 +14,19 @@
     error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
     include 'session.php';
     include 'admin/admin.php';
+    include 'admin/mail.php';
     include 'cfg.php';
 
     $cfg = new Config("localhost", "root", "", "moja_strona");
     $db = $cfg->connect();
     $user = new Admin($db);
+    $mail = new Mail($db);
     $user->EdytujPodstrone();
     $user->DodajPodstrone();
     $user->UsunPodstrone();
+    $mail->DodajMail();
+    $mail->UsunMail();
+
 ?>
 
 <div class="wrap">
@@ -54,6 +59,18 @@
     </form>
 
 
+</div>
+
+<div class="mails">
+    <form class='listDeleteMails' action="" method="post">
+        <h1 class='heading'>Lista Maili</h1>
+            <?php
+                $mail->ListaMaili();
+            ?>
+        <h1 class='headingMails'>Usun mail</h1>
+        <input class="mailid" name="mailID" type="text" placeholder="ID maila do usuniecia">
+        <button class="submitbutton" name="deleteMail" type="submit" href="/">Usuń</button>
+    </form>
 </div>
 </body>
 </html>

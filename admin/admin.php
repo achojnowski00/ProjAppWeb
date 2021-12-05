@@ -51,7 +51,6 @@ class Admin
             $dbstatus = mysqli_real_escape_string($this->db,$_POST['status']); 
             $query = "INSERT INTO page_list VALUES(default, '$dbtitle', '$dbcontent', '$dbstatus')";
             $result = $this->db->query($query);
-            // echo $result;
         }
     }
     function UsunPodstrone() {
