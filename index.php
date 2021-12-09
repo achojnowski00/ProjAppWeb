@@ -33,7 +33,7 @@
       </li>
 
       <li class="hamMenuListItem">
-        <a href="cmspanel.php">PANEL CMS</a>
+        <a href="cmspanel.php">ADMIN PANEL</a>
       </li>
 
     </ul>

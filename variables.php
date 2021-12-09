@@ -1,6 +1,4 @@
 <?php
-
-$hobby = 'fotografia';
-$name = 'Alex';
-
+  $hobby = 'fotografia';
+  $name = 'Alex';
 ?>

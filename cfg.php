@@ -5,6 +5,10 @@
     private $dbpass;
     private $baza;
     
+    // ===============
+    //   KONSTRUKTOR
+    // ===============
+    // połączenie się z bazą, wprawadzamy nazwe hosta usera password i nazwę bazy
     function __construct( $dbhost, $dbuser, $dbpass, $baza ){
       $this->dbhost = $dbhost;
       $this->dbuser = $dbuser;
@@ -13,10 +17,10 @@
     }
     
     public function connect(){
-      // $link = mysqli_connect($this->$dbhost,$this->$dbuser,$this->$dbpass);
+      // połączenie się z bazą za pomocą atrybutów obiektu klasy
       $link = new mysqli($this->dbhost,$this->dbuser,$this->pass,$this->baza);
       if(!$link) echo '<b>przerwanie połączenia </b>';
-      if(!mysqli_select_db($link,$this->baza)) echo 'nie wybrano bazy';
+      if(!mysqli_select_db($link,$this->baza)) echo 'Nie wybrano żadnej bazy';
       return $link;
     }
   }
