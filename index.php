@@ -74,16 +74,6 @@
     if($_GET['idp'] == 'kontakt') $strona = $controller->PokazPodstrone(5);
     if($_GET['idp'] == 'lab3') $strona = $controller->PokazPodstrone(6);
 
-    // // WERSJA PHP
-    // if($_GET['idp'] == '') $strona = './html/main.html';
-    // if($_GET['idp'] == 'o-mnie') $strona = './html/aboutme.html';
-    // if($_GET['idp'] == 'portfolio') $strona = './html/portfolio.html';
-    // if($_GET['idp'] == 'uslugi') $strona = './html/uslugi.html';
-    // if($_GET['idp'] == 'sprzet') $strona = './html/gear.html';
-    // if($_GET['idp'] == 'kontakt') $strona = './html/contact.html';
-    // if($_GET['idp'] == 'lab3') $strona = './html/lab3.html';
-
-
     
     if($strona){
       echo($strona);
