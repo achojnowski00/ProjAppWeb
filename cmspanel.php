@@ -15,17 +15,25 @@
     include 'session.php';
     include 'admin/admin.php';
     include 'admin/mail.php';
+    include 'admin/kategorie.php';
     include 'cfg.php';
 
     $cfg = new Config("localhost", "root", "", "moja_strona");
     $db = $cfg->connect();
     $user = new Admin($db);
     $mail = new Mail($db);
+    $category = new Category($db);
+
     $user->EdytujPodstrone();
     $user->DodajPodstrone();
     $user->UsunPodstrone();
+
     $mail->DodajMail();
     $mail->UsunMail();
+
+    $category->DodajKategorie();
+    $category->EdytujKategorie();
+    $category->UsunKategorie();
 
 ?>
 
@@ -72,5 +80,34 @@
         <button class="submitbutton" name="deleteMail" type="submit" href="/">Usuń</button>
     </form>
 </div>
+
+<div class="categories wrap">
+    <form class='addPage form' action="" method="post">    
+        <h1 class="heading">DODAJ KATEGORIE</h1>
+        <input class="title inputbox" name="motherOfCategory" type="text" placeholder="Matka kategorii">
+        <input class="status inputbox" name="nameOfCategory" type="text" placeholder="Nazwa kategorii">
+        <button class="submitbutton" name="addCategory" type="submit" href="/">Dodaj KATEGORIE</button>
+    </form>
+
+    <form class='edit form' action="" method="post">
+        <h1 class='heading'>Edytuj Podstronę</h1>
+        <input class="idstrony inputbox" name="idOfCategory" type="text" placeholder="ID kategorii">
+        <input class="title inputbox" name="motherOfCategory" type="text" placeholder="Matka kategorii">
+        <input class="status inputbox" name="nameOfCategory" type="text" placeholder="Nazwa kategorii">
+        <button class="submitbutton" name="editCategory" type="submit" href="/">Edytuj</button>
+    </form>
+
+    <form class='listDeleteCat form' action="" method="post">
+        <h1 class='heading'>Lista Kategorii</h1>
+            <?php
+                $category->ListaKategori();
+            ?>
+        <h1 class='heading headingBottom'>Usuń kategorie</h1>
+        <input class="pageid" name="idOfCategory" type="text" placeholder="ID kategorii">
+        <button class="submitbutton" name="deleteCategory" type="submit" href="/">Usuń</button>
+    </form>
+
+</div>
+
 </body>
 </html>
