@@ -49,7 +49,7 @@
 
   <section class="menu">
     <div class="menu__wrap">
-      <a href="index.php?idp=" class="menu__item linkReset">Strona główna</a>
+      <a href="index.php?idp=gl" class="menu__item linkReset">Strona główna</a>
       <a href="index.php?idp=o-mnie" class="menu__item linkReset">O mnie</a>
       <a href="index.php?idp=portfolio" class="menu__item linkReset">Portfolio</a>
       <a href="index.php?idp=uslugi" class="menu__item linkReset">Uslugi</a>
@@ -74,10 +74,8 @@
     $mail->DodajMail();
     
     $products = new Products($DBconnect);
-    
-  
 
-    if($_GET['idp'] == '') $strona = $controller->PokazPodstrone(7);
+    if($_GET['idp'] == 'gl') $strona = $controller->PokazPodstrone(7);
     if($_GET['idp'] == 'o-mnie') $strona = $controller->PokazPodstrone(1);
     if($_GET['idp'] == 'portfolio') $strona = $controller->PokazPodstrone(2);
     if($_GET['idp'] == 'uslugi') $strona = $controller->PokazPodstrone(3);
@@ -88,11 +86,15 @@
     
     if($strona){
       echo($strona);
-    } else{
-      echo "The file $filename does not exist";
     }
 
   ?>
+
+  <div class="sklep wrapper">
+    <?php
+      $products->ListaProduktow2();
+    ?>
+  </div>
 
   <script src="js/timedate.js"></script>
   <script src="js/kolorujtlo.js"></script>

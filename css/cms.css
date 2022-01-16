@@ -141,7 +141,10 @@ body .wrap {
   max-width: 1024px;
   padding: 0 20px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
 }
 
 .mails .heading {
@@ -240,5 +243,17 @@ body .wrap {
 .category.child {
   font-size: 16px;
   padding-left: 10px;
+}
+
+.products {
+  margin-top: 50px;
+  padding: 50px 0;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.categories {
+  border-top: 1px solid #222;
+  padding-top: 50px;
 }
 /*# sourceMappingURL=cms.css.map */
