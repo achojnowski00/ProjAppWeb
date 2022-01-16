@@ -38,8 +38,8 @@
       </li>
 
       <li class="hamMenuListItem">
-        <!-- <a href="index.php?idp=sklep">SKLEP</a> -->
-        <a href="sklep.php">SKLEP</a>
+        <a href="index.php?idp=sklep">SKLEP</a>
+        <!-- <a href="sklep.php">SKLEP</a> -->
       </li>
 
       
@@ -84,11 +84,14 @@
     if($_GET['idp'] == 'sprzet') $strona = $controller->PokazPodstrone(4);
     if($_GET['idp'] == 'kontakt') $strona = $controller->PokazPodstrone(5);
     if($_GET['idp'] == 'lab3') $strona = $controller->PokazPodstrone(6);
+    if($_GET['idp'] == 'sklep') $strona = 'sklep';
 
     
-    if($strona){
+    if($strona == 'sklep') {
+      include 'html/shop.php';
+    } else if ($strona) {
       echo($strona);
-    } else{
+    } else {
       echo "The file $filename does not exist";
     }
 
