@@ -45,4 +45,54 @@ body.main {
 .prodCena {
   text-align: center;
 }
+
+.prod .addToCart {
+  margin: 0 auto;
+  display: block;
+  background-color: #006900;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 420px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px 40px;
+  font-size: 20px;
+}
+
+.cart .headingCart {
+  text-align: center;
+}
+
+.cart .cartItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px dotted #aaa;
+}
+
+.cart .cartItem .name {
+  margin-right: 30px;
+}
+
+.cart .cartItem .price {
+  margin-right: 20px;
+}
+
+.cart .cartItem .delButton {
+  background-color: #690000;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
 /*# sourceMappingURL=sklep.css.map */

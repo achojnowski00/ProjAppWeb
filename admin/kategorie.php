@@ -29,7 +29,14 @@
                 $idOfCategory = mysqli_real_escape_string($this->db,$_POST['idOfCategory']);  
                 $motherOfCategory = mysqli_real_escape_string($this->db,$_POST['motherOfCategory']);
                 $nameOfCategory = mysqli_real_escape_string($this->db,$_POST['nameOfCategory']); 
-                $result = $this->db->query( "UPDATE kategorie SET matka = '$motherOfCategory', nazwa = '$nameOfCategory' WHERE id = $idOfCategory"); //wysylamy zapytanie do bazy danych o zaktualizowanie danych w danej krotce
+                // $result = $this->db->query( "UPDATE kategorie SET matka = '$motherOfCategory', nazwa = '$nameOfCategory' WHERE id = $idOfCategory"); //wysylamy zapytanie do bazy danych o zaktualizowanie danych w danej krotce
+
+
+                if($motherOfCategory){
+                    $result = $this->db->query("UPDATE kategorie SET matka = '$motherOfCategory' WHERE id = $idOfCategory");}
+
+                if($nameOfCategory){
+                    $result = $this->db->query("UPDATE kategorie SET nazwa = '$nameOfCategory' WHERE id = $idOfCategory");}
             }
         }
 

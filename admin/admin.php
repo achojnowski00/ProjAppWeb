@@ -60,7 +60,17 @@ class Admin
             $dbcontent = mysqli_real_escape_string($this->db,$_POST['content']); 
             $dbid = mysqli_real_escape_string($this->db,$_POST['idstrony']); 
             $dbstatus = mysqli_real_escape_string($this->db,$_POST['status']);
-            $result = $this->db->query( "UPDATE page_list SET page_title = '$dbtitle', page_content = '$dbcontent', status = '$dbstatus' WHERE id = $dbid"); //wysylamy zapytanie do bazy danych o zaktualizowanie danych w danej krotce
+            // $result = $this->db->query( "UPDATE page_list SET page_title = '$dbtitle', page_content = '$dbcontent', status = '$dbstatus' WHERE id = $dbid"); //wysylamy zapytanie do bazy danych o zaktualizowanie danych w danej krotce
+
+
+            if($dbtitle){
+                $result = $this->db->query("UPDATE page_list SET page_title = '$dbtitle' WHERE id = $dbid");}
+
+            if($dbcontent){
+                $result = $this->db->query("UPDATE page_list SET page_content = '$dbcontent' WHERE id = $dbid");}
+
+            if($dbstatus){
+                $result = $this->db->query("UPDATE page_list SET status = '$dbstatus' WHERE id = $dbid");}
         }
     }
 

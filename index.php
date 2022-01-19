@@ -67,6 +67,7 @@
     include 'admin/admin.php';
     include 'admin/mail.php';
     include 'admin/products.php';
+    include 'admin/koszyk.php';
 
     $config = new Config('localhost','root','','moja_strona');
     $DBconnect = $config->connect();
@@ -76,6 +77,9 @@
     $mail->DodajMail();
     
     $products = new Products($DBconnect);
+    
+    $cart = new Cart($DBconnect);
+    $cart->AddToCart();
     
   
 

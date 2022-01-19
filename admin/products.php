@@ -98,7 +98,7 @@
         function ListaProduktow2() {
             $categories = $this->db->query("SELECT * FROM produkty ORDER BY id");
             while($row = mysqli_fetch_array($categories)) {
-                echo '<div class="prod"><img src="'.$row['zdjecie'].'"class="prodImg"><h1 class="prodTitle">'.$row['tytul'].'</h1><h2 class="prodCena">'.$row['cena_netto'].'</h2><h3 class="prodId">'.$row['id'].'</h3></div>';
+                echo '<div class="prod"><img src="'.$row['zdjecie'].'"class="prodImg"><h1 class="prodTitle">'.$row['tytul'].'</h1><h2 class="prodCena">'.$row['cena_netto'].'</h2><form action="" method="post"><input name="idProd" type="hidden" value="'.$row['id'].'"><input class="addToCart" type="submit" name="addToCart" value="Dodaj do koszyka"></form></div>';
             }
         }
 
