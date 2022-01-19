@@ -39,10 +39,12 @@
 
       <li class="hamMenuListItem">
         <a href="index.php?idp=sklep">SKLEP</a>
-        <!-- <a href="sklep.php">SKLEP</a> -->
       </li>
-
       
+      <li class="hamMenuListItem">
+        <!-- <a href="./html/filmy.html">FILMY</a> -->
+        <a href="index.php?idp=filmy">FILMY</a>
+      </li>
 
     </ul>
   </div>
@@ -84,6 +86,7 @@
     if($_GET['idp'] == 'sprzet') $strona = $controller->PokazPodstrone(4);
     if($_GET['idp'] == 'kontakt') $strona = $controller->PokazPodstrone(5);
     if($_GET['idp'] == 'lab3') $strona = $controller->PokazPodstrone(6);
+    if($_GET['idp'] == 'filmy') $strona = $controller->PokazPodstrone(23);
     if($_GET['idp'] == 'sklep') $strona = 'sklep';
 
     
